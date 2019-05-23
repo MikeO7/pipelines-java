@@ -1,3 +1,4 @@
+[![Build Status](https://dev.azure.com/mikedornelas/Pipelines/_apis/build/status/MikeO7.pipelines-java?branchName=master)](https://dev.azure.com/mikedornelas/Pipelines/_build/latest?definitionId=6&branchName=master)
 
 # Contributing
 
