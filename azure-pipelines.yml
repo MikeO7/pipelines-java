@@ -25,9 +25,7 @@ steps:
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
-    sonarQubeRunAnalysis: true
-    sqMavenPluginVersionChoice: 'latest'
-    findBugsRunAnalysis: true
+    sonarQubeRunAnalysis: false
 
 - task: SonarCloudPublish@1
   inputs:
