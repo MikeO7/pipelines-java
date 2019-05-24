@@ -30,8 +30,6 @@ steps:
 
 - script: mvn sonar:sonar \ -Dsonar.projectKey=MikeO7_pipelines-java \ -Dsonar.organization=mikeo7-github \ -Dsonar.host.url=https://sonarcloud.io \ -Dsonar.login=b22a40c973ba53e682f4b253a2c1b5fe30688931
 
-
-
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
