@@ -26,15 +26,4 @@ steps:
       -Dsonar.login=b22a40c973ba53e682f4b253a2c1b5fe30688931
   displayName: 'Build with Maven'
 
-- task: Maven@3
-  inputs:
-    mavenPomFile: 'pom.xml'
-    publishJUnitResults: true
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    javaHomeOption: 'JDKVersion'
-    mavenVersionOption: 'Default'
-    mavenAuthenticateFeed: false
-    sonarQubeRunAnalysis: true
-    sqMavenPluginVersionChoice: 'latest'
-
 - task: SonarCloudAnalyze@1
