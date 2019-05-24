@@ -20,12 +20,14 @@ steps:
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
+    options: 'mvn sonar:sonar \   -Dsonar.projectKey=MikeO7_SpringBoot-ZeroCode-Integration \   -Dsonar.organization=mikeo7-github \   -Dsonar.host.url=https://sonarcloud.io \   -Dsonar.login=81616d27c9e841b66ff0df6002f85470990e7e1b'
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     javaHomeOption: 'JDKVersion'
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
-    sonarQubeRunAnalysis: false
+    sonarQubeRunAnalysis: true
+    sqMavenPluginVersionChoice: 'latest'
 
 - task: SonarCloudPublish@1
   inputs:
